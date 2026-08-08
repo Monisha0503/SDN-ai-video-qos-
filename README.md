@@ -76,8 +76,8 @@ Full plan: [`docs/12-week-plan.pdf`](docs/12-week-plan.pdf)
 
 ## Links
 
-- **Report (Overleaf):** _add link here_
-- **Project Board / Presentation:** _add link here_
+- **Report (Overleaf):** https://www.overleaf.com/read/pxvpbmhbmbnk#553d2e
+- **Project Board / Presentation:** https://docs.google.com/presentation/d/1btQkrH0NQOfDMpvwdyCGi0GJ9AnBnHH1/edit?usp=sharing
 
 ## References
 
