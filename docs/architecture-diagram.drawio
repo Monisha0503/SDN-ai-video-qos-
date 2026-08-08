@@ -1,0 +1,105 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Architecture" id="arch1">
+    <mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <!-- Plane Labels -->
+        <mxCell id="lbl_app" value="Application Plane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="20" y="40" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_ctrl" value="Control Plane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="20" y="230" width="160" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl_data" value="Data Plane" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontStyle=1;fontSize=14;" vertex="1" parent="1">
+          <mxGeometry x="20" y="560" width="160" height="100" as="geometry" />
+        </mxCell>
+
+        <!-- Application Plane boxes -->
+        <mxCell id="videoService" value="Video Service" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="230" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="policyManager" value="Policy Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="420" y="40" width="160" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aiPrediction" value="AI Prediction Module&#10;(Multi-Model: RF / GB / LSTM)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="610" y="40" width="200" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="dashboard" value="Real-Time Dashboard&#10;(Live Metrics + AI Decisions)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="840" y="40" width="200" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Controller box -->
+        <mxCell id="controller" value="SDN Controller (Ryu)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=13;fontStyle=1;verticalAlign=top;" vertex="1" parent="1">
+          <mxGeometry x="230" y="230" width="810" height="220" as="geometry" />
+        </mxCell>
+
+        <mxCell id="qosRouting" value="QoS Routing&#10;Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="250" y="270" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="topoManager" value="Topology&#10;Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="420" y="270" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="statsCollector" value="Statistics&#10;Collector" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="590" y="270" width="150" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="confThresh" value="Confidence Threshold&#10;Checker" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;fontSize=11;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="760" y="270" width="160" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="routesCache" value="Routes Cache" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="250" y="350" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="predictionCache" value="Prediction History&#10;(Confidence Scores)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="420" y="350" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="qosResources" value="QoS Resources&#10;Manager" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="590" y="350" width="150" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="thresholdTune" value="Threshold Tuning&#10;(0.5 / 0.75 / 0.9)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="760" y="350" width="160" height="50" as="geometry" />
+        </mxCell>
+
+        <!-- Data Plane switches -->
+        <mxCell id="switch1" value="Switch 1&#10;Queue 1, Queue 2 ... Queue n" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="260" y="590" width="220" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="switchDots" value="Switch 2 ... Switch n" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;strokeColor=none;fontSize=12;fontStyle=2;" vertex="1" parent="1">
+          <mxGeometry x="510" y="600" width="180" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="switchN" value="Switch n&#10;Queue 1, Queue 2 ... Queue n" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#000000;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="720" y="590" width="220" height="60" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows: App <-> Controller -->
+        <mxCell id="e1" style="endArrow=block;startArrow=block;html=1;" edge="1" parent="1" source="videoService" target="controller">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" style="endArrow=block;startArrow=block;html=1;" edge="1" parent="1" source="policyManager" target="controller">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" style="endArrow=block;startArrow=block;html=1;" edge="1" parent="1" source="aiPrediction" target="controller">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" style="endArrow=block;startArrow=block;html=1;" edge="1" parent="1" source="dashboard" target="controller">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrows: Controller <-> Data Plane -->
+        <mxCell id="e5" style="endArrow=block;html=1;" edge="1" parent="1" source="controller" target="switch1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" style="endArrow=block;html=1;" edge="1" parent="1" source="switchN" target="statsCollector">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <!-- Arrow: switches connected -->
+        <mxCell id="e7" style="endArrow=block;startArrow=block;html=1;" edge="1" parent="1" source="switch1" target="switchN">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
