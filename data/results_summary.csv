@@ -1,0 +1,5 @@
+Metric,Static/Normal,AI-SDN Run
+Average RTT (ms),0.209,0.409
+Packet Loss (%),0,0
+Throughput (Gbps),50.7,35.4
+Prediction Latency (ms),-,4.77

@@ -1,0 +1,6 @@
+Metric,Value
+Number of predictions,48
+Average latency (ms),4.77
+Minimum latency (ms),2.10
+Maximum latency (ms),14.98
+Standard deviation (ms),2.34
