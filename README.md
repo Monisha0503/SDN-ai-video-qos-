@@ -11,7 +11,7 @@ CS23502 Mini Project, MIT-Chennai (Dept. of Computer Technology)
 
 ## What this project does
 
-A Ryu (OpenFlow 1.3) controller keeps a sliding window of the last 5 QoS samples (10 s) of bandwidth, packet loss, delay and jitter, turns them into 24 trend features, and a Gradient Boosting classifier forecasts whether congestion will occur 3 samples (6 s) later. If the forecast is "congestion" with confidence >= 0.90, the controller pre-emptively moves traffic from the normal path (s1-s2-s4) to the alternate path (s1-s3-s4). Otherwise it keeps the normal path.
+A Ryu (OpenFlow 1.3) controller keeps a sliding window of the last 5 QoS samples (10 s) of bandwidth, packet loss, delay and jitter, turns them into 24 trend features, and a Gradient Boosting classifier forecasts whether congestion will occur 3 samples (6 s) later.
 
 ## Scope and honesty note (please read)
 
